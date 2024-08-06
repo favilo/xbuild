@@ -98,17 +98,14 @@ pub fn build(env: &BuildEnv, out: &Path) -> Result<()> {
                     versionName '{version_name}'
                     externalNativeBuild {{
                         cmake {{
+                            version "3.30.1"
                             arguments "-DANDROID_STL=c++_shared"
                         }}
                     }}
                 }}
-                sourceSets {{
-                    main {{
-                        assets.srcDirs = ['../../../../../../assets']
-                    }}
-                }}
                 externalNativeBuild {{
                     cmake {{
+                        version "3.30.1"
                         path "CMakeLists.txt"
                     }}
                 }}

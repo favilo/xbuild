@@ -11,3 +11,4 @@ members = [
 ]
 default-members = ["xbuild"]
 exclude = ["examples"]
+resolver = "2"
